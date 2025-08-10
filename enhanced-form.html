@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>ENHANCED HTML5 CONTENT</title>
+        <meta name="description" content="Enhanced HTML5 Example">
+        <meta name="keywords" content="HTML5, Forms, Lists, Tables, Media">
+        <meta name="author" content="Karen Wanjiru">   
+    
+    </head>
+    <body>
+        <header>
+            <h1>HTML5 Advanced Content Assignment</h1>
+        </header>
+
+        <main>
+            <!--List section-->
+            <!--Un-ordered List-->
+            <section>
+                <h2>Un-ordered Nested List</h2>
+                <h3>My favourite programming languages</h3>
+                <ul type="circle">
+                    <li>JavaScript
+                        <ul type="square">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+
+            <!--Ordered List-->
+            <section>
+                <h2>Ordered List</h2>
+                <h3>Top 3 favourite car brands</h3>
+                <ol type="A">
+                    <li>Lexus</li>
+                    <li>Porsche</li>
+                    <li>Mercedes Benz</li>
+                </ol>
+            </section>
+
+            <!--Definition List-->
+            <section>
+                <h2>Definition List</h2>
+                <dl>
+                    <dt>Frontend Developer</dt>
+                    <dd>Builds the user interface and ensures a smooth user experience.</dd>
+
+                    <dt>Backend Developer</dt>
+                    <dd>Handles server-side logic, databases, and APIs.</dd>
+
+                    <dt>UX Designer</dt>
+                    <dd>Focuses on the overall feel and usability of the product.</dd>
+                </dl>
+            </section>
+
+            <!--Table Section-->
+            <section>
+                <h2>Tables</h2>
+                <caption>Student Grades</caption> <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Student Name</td>
+                            <td>Math</td>
+                            <td>English</td>
+                            <td>Computer</td>
+                        </tr>
+                        <tr>
+                            <td>Chris</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>Gabby</td>
+                            <td>85</td>
+                            <td>90</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Moses</td>
+                            <td>78</td>
+                            <td>82</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Kate</td>
+                            <td>90</td>
+                            <td>85</td>
+                            <td>92</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!--Media Section-->
+            <section>
+                <h3>Image</h3>
+                <img src="sunset.jpg" alt="Sunset at the ocean" width="500" height="500">
+            </section>
+
+            <section>
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="Alessia Cara - Scars To Your Beautiful (Lyrics).webm" type="audio/webm">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+            
+            <section>
+                <h3>Video</h3>
+                <video controls width="550" height="400">
+                    <source src="facts.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </section>
+
+            <!--Form Section-->
+            <section>
+                <h3>Contact Form</h3>
+                <form action="submit_form.py" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Karen Wanjiru" required> <br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="karen001@gmail.com" required> <br><br>
+
+                        <label for="phonenumber">Phone Number:</label>
+                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="07XXXXXXXX" pattern="[0-9]{10}" maxlength="10" required> <br><br>
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">--Select Country--</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="tanzania">Tanzania</option>
+                            <option value="rwanda">Rwanda</option>
+                            <option value="burundi">Burundi</option>
+                            <option value="southafrica">South Africa</option>
+                            <option value="nigeria">Nigeria</option>
+                        </select> <br><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Job Information</legend>
+                        
+                        <label for="jobtitle">Job Title:</label>
+                        <input type="text" id="jobtitle" name="jobtitle" value="Software Engineer" readonly> <br><br>
+
+                        <label for="jobdescription">Job Description:</label> <br> 
+                        <textarea id="jobdescription" name="jobdescription" placeholder="Why should we hire you?" rows="10" cols="50" minlength="50" maxlength="1000"></textarea>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Submit">
+                    
+                
+                </form>
+            </section>
+
+        </main>
+    
+    
+        <footer>
+            <p>&copy; 2025 Karen Wanjiru | HTML5 Advanced Assignment</p>
+        </footer>
+    
+    </body>
+</html>
